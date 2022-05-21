@@ -7,9 +7,9 @@ relation = ["Pere", "Mere", "Enfants"]
 family_name = ["Simpson", "Griffyn", "Smith", "Vignerand", "D'espine", "Blerd", "Pierrétot"]
 mother_left = ["est partie chercher du lait", "est morte dans un accident de voiture", "Est partie avec le facteur", "est partie ce remarier a l'étranger", "a refait sa vie en australie"]
 father_left = ["est parti chercher du lait", "est mort percuter par un chauffard", "Est partie avec l'ex-femme de son ex-patron", "est partie ce remarier a l'étranger", "a refait sa vie en argentine"]
-just_father = ["F-Choix 1", "F-Choix 2", "F-Choix 3"]
-just_mother = ["M-Choix 1", "M-Choix 3", "M-Choix 3"]
-just_both = ["B-Choix 1", "B-Choix 2", "B-Choix 3"]
+just_father = ["un enfant non voulu", "un enfant aimé", "un enfant maltraité", "un enfant adopté", "un enfant intelligent"]
+just_mother = ["un enfant non voulu", "un enfant aimé", "un enfant maltraité", "un enfant adopté", "un enfant intelligent"]
+just_both = ["un enfant non voulu", "un enfant aimé", "un enfant maltraité", "un enfant adopté", "un enfant intelligent"]
 trash = []
 pere = []
 mere = []
@@ -82,6 +82,7 @@ def main():
     get_members()
     if (len(members) != 0):
         get_family()
+        print('----------------------------------------------------------')
         show_family_name()
         show_family()
         if (len(pere) == 0 and len(mere) == 0):
